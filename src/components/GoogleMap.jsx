@@ -1,9 +1,11 @@
 import React from 'react';
 
-export default React.createClass({
-  render: function() {
-    return <div className="map">
-      I am google map
-    </div>;
+export default class Listing extends React.Component {
+
+  render() {
+    return (<div className="map">
+      Trust me, I am a google map.
+    </div>);
   }
-});
+
+}

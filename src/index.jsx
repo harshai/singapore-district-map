@@ -4,6 +4,6 @@ import GoogleMap from './components/GoogleMap';
 
 
 ReactDOM.render(
-  <GoogleMap  />,
+  <GoogleMap />,
   document.getElementById('app')
 );
