@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import GoogleMap from './components/GoogleMap';
+import SimpleMap from './components/GoogleMap';
 
 import './styles/main.scss';
 
 ReactDOM.render(
-  <GoogleMap />,
+  <SimpleMap />,
   document.getElementById('app')
 );
