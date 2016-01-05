@@ -1,4 +1,6 @@
 const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
 
 module.exports = {
   entry: [
@@ -15,7 +17,16 @@ module.exports = {
     preLoaders: [{
       test: /\.jsx?$/,
       loaders: ['eslint'],
-    }]
+    }, {
+      test: /\.scss$/,
+      loader: 'style!css!sass!postcss?pack=cleaner',
+    }],
+  },
+  postcss: function () {
+    return {
+      defaults: [autoprefixer, cssnano],
+      cleaner: [autoprefixer({ browsers: ['last 2 versions'] })],
+    };
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],
