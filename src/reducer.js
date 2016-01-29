@@ -1,4 +1,5 @@
 import { List } from 'immutable';
+import districts from './Districts';
 import {
   SELECT_DISTRICT,
   UNSELECT_DISTRICT,
@@ -6,7 +7,6 @@ import {
   CLEAR_ALL,
   CLEAR_ALL_EXCEPT,
 } from './actions';
-import districts from './Districts';
 
 export default function(state = new List(), action) {
   if (!(action && action.type)) return state;
