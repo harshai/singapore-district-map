@@ -1,4 +1,14 @@
 body {
-  background-color: gold;
+  background-color: orange;
   display: flex;
+  min-height: 100vh;
+}
+
+html, body, .outer{
+  height: 100%;
+}
+
+#app {
+  height: 50rem;
+  width: 50rem;
 }

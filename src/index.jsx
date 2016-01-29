@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SimpleMap from './components/GoogleMap';
-
+import { Provider } from 'react-redux';
+import { App } from './App';
 import './styles/main.scss';
 
+
+
 ReactDOM.render(
-  <SimpleMap />,
+  <App />,
   document.getElementById('app')
 );
